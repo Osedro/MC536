@@ -1,3 +1,3 @@
 # Aluno
 
-Leonardo de ALencar Lopes
+Leonardo de Alencar Lopes
