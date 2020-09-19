@@ -1,6 +1,6 @@
 # Apresentação da tarefa
 
-Notebook com tarefa 1: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Osedro/MC536/master)
+Notebook com tarefa 1: [![Binder](https://mybinder.org/badge_logo.svg)](https://hub.gke.mybinder.org/user/osedro-mc536-ddzph04t/notebooks/lab01/notebook/notebook.ipynb)
 
 Os dados foram obtidos em: 
 
