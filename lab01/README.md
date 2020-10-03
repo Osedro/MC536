@@ -9,3 +9,8 @@ http://dados.gov.br/dataset/contratacoes-para-covid-19/resource/05df0c6a-de45-46
 https://maps2.dcgis.dc.gov/dcgis/rest/services/FEEDS/MPD/MapServer/2/query?where=1%3D1&outFields=*&outSR=4326&f=json
 
 Para exercitar melhor a aquisição de dados pleo Jupiter, na tarefa 1 o primeiro conjunto de dados são aquisitados via web, enquanto o segundo é aquisitado em um arquivo local.
+
+
+Imagem da tarefa 2:
+
+![alt text](https://raw.githubusercontent.com/Osedro/MC536/master/lab01/images/tarefa_2.png)
