@@ -1,6 +1,6 @@
 # Apresentação da tarefa
 
-Notebook com tarefa 1: [![Binder](https://mybinder.org/badge_logo.svg)](https://hub.gke.mybinder.org/user/osedro-mc536-ddzph04t/notebooks/lab01/notebook/notebook.ipynb)
+Notebook com tarefa 1: [![Binder](https://mybinder.org/badge_logo.svg)](https://hub.gke2.mybinder.org/user/osedro-mc536-0jb3i5fi/notebooks/lab01/notebook/notebook.ipynb)
 
 Os dados foram obtidos em: 
 
