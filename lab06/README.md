@@ -39,8 +39,8 @@ Faça a projeção em relação a Patologia, ou seja, conecte patologias que sã
 MATCH (p1:Pathology)
 MATCH (p2:Pathology)
 MATCH (d:Drug)
-WHERE (d)-[:Treats]->(p1) AND (d)-[:Treats]->(p2)
-CREATE (p1)-[:SameAs]->(p2)
+WHERE (d)-[:Treats]->(p1) AND (d)-[:Treats]->(p2) AND p1.name<>p2.name
+CREATE (p1)-[:SameDrug]->(p2)
 ~~~
 
 ## Exercício 5
@@ -49,7 +49,14 @@ Construa um grafo ligando os medicamentos aos efeitos colaterais (com pesos asso
 
 ### Resolução
 ~~~cypher
-(escreva aqui a resolução em Cypher)
+LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/santanche/lab2learn/master/data/faers-2017/drug.csv' AS line
+CREATE (:Drug {code: line.code, name: line.name})
+LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/santanche/lab2learn/master/data/faers-2017/pathology.csv' AS line
+CREATE (:Pathology { code: line.code, name: line.name})
+LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/santanche/lab2learn/master/data/faers-2017/drug-use.csv' AS line
+MATCH (d:Drug {code: line.codedrug})
+MATCH (p:Pathology {code: line.codepathology})
+CREATE (d)-[:Treats {person: line.idperson}]->(p)
 ~~~
 
 ## Exercício 6
